@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="./contactstyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/276f308f99.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+        <section class="header">
+
+                <nav class="navigation" id="NAVIGATION">
+                        <a href="home.html"><img src="./img/logo.png" alt=""></a>
+                        <div class="navlinks">
+                                <i class="fa-solid fa-circle-xmark" onclick="hidemenu()"></i>
+
+                                <ul>
+                                        <li><a href="./home.html">HOME</a></li>
+                                        <li><a href="./about.html">ABOUT</a></li>
+                                        <li><a href="./blog.html">BLOG</a></li>
+                                        <li><a href="./contact.html">CONTACT</a></li>
+                                </ul>
+
+
+                        </div>
+
+                </nav>
+
+                <i class="fa-solid fa-bars" id="SHOWICON" onclick="showmenu()"></i>
+
+                <div class="text-content">
+                        <h1>Contact</h1>
+                </div>
+        </section>
+        <section class="contact">
+                <div class="location">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3779.7530139334276!2d73.89055411395617!3d18.675076087319184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c880511d7c35%3A0xc4e495a8c1f663eb!2sMIT%20Academy%20of%20Engineering!5e0!3m2!1sen!2sin!4v1644697639261!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                </div>
+
+                <div class="contact-row">
+                        <div class="left-contact">
+                                <div>
+                                        <i class="fa-solid fa-house"></i>
+                                        <span>Eduford College,Devu Phata Alandi ,Pune-412105</span>
+                                </div>
+                                <div><i class="fa-solid fa-mobile"></i>
+                                        <span>+91 9888456213</span>
+                                </div>
+                                <div><i class="fa-solid fa-envelope"></i>
+                                        <span>mitaoe@gmail.com</span>
+                                </div>
+                        </div>
+                </div>
+        </section>
+
+
+
+        <section class="footer">
+                <div class="title">
+                        <h2>About Us</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, vol Lorem ipsum dolor
+                                <br> amet consectetur adipisicing elit. Distinctio, aliquam!
+                        </p>
+
+                        <div class="social">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
+
+                        </div>
+                        <div class="copy">
+                                Copyright &copy; All rights reserved.
+                        </div>
+
+                </div>
+
+        </section>
+
+        <script>
+                var NAVIGATION = document.getElementById("NAVIGATION")
+                var SHOWICON = document.getElementById("SHOWICON")
+                showmenu = () => {
+                        NAVIGATION.style.display = "block";
+                        SHOWICON.style.display = "none";
+                }
+                hidemenu = () => {
+                        NAVIGATION.style.display = "none";
+                        SHOWICON.style.display = "block";
+                }
+        </script>
+
+</body>
+
+</html>

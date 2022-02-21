@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About</title>
+        <link rel="stylesheet" href="./aboutstyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/276f308f99.js" crossorigin="anonymous"></script>
+        
+</head>
+
+<body>
+        <section class="header">
+
+                <nav class="navigation" id="NAVIGATION">
+                        <a href="home.html"><img src="./img/logo.png" alt=""></a>
+                        <div class="navlinks">
+                                <i class="fa-solid fa-circle-xmark" onclick="hidemenu()"></i>
+
+                                <ul>
+                                        <li><a href="./home.html">HOME</a></li>
+                                        <li><a href="./about.html">ABOUT</a></li>
+                                        <li><a href="./blog.html">BLOG</a></li>
+                                        <li><a href="./contact.html">CONTACT</a></li>
+                                </ul>
+
+
+                        </div>
+
+                </nav>
+
+                <i class="fa-solid fa-bars" id="SHOWICON" onclick="showmenu()"></i>
+
+                <div class="text-content">
+                        <h1>About Us</h1>
+                </div>
+        </section>
+        <section class="about-content">
+                <div class="about-row">
+                        <div class="col-about">
+                                <h3>We are the World's Largest University</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga repellendus assumenda est labore consequuntur officiis adipisci eaque quam impedit, mollitia accusantium minus iusto dolores temporibus iure commodi quos ab distinctio!</p>
+                        </div>
+                        <div class="colaboutimg">
+                                <img src="./img/professor.jpg" alt="">
+                        </div>
+                </div>
+
+        </section>
+        <section class="footer">
+                <div class="title">
+                        <h2>About Us</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, vol Lorem ipsum dolor <br> amet consectetur adipisicing elit. Distinctio, aliquam!</p>
+
+                        <div class="social">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                
+                        </div>
+                        <div class="copy">
+                        Copyright &copy; All rights reserved.
+                        </div>
+
+                </div>
+
+        </section>
+
+        <script>
+                var NAVIGATION = document.getElementById("NAVIGATION")
+                var SHOWICON = document.getElementById("SHOWICON")
+                showmenu = () => {
+                        NAVIGATION.style.display = "block";
+                        SHOWICON.style.display = "none";
+                }
+                hidemenu = () => {
+                        NAVIGATION.style.display = "none";
+                        SHOWICON.style.display = "block";
+                }
+        </script>
+
+</body>
+
+</html>

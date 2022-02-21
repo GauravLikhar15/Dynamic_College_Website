@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eduford College University</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/276f308f99.js" crossorigin="anonymous"></script>
+        
+</head>
+
+<body>
+        <section class="header">
+
+                <nav class="navigation" id="NAVIGATION">
+                        <a href="home.html"><img src="./img/logo.png" alt=""></a>
+                        <div class="navlinks">
+                                <i class="fa-solid fa-circle-xmark" onclick="hidemenu()"></i>
+
+                                <ul>
+                                        <li><a href="./home.html">HOME</a></li>
+                                        <li><a href="./about.html">ABOUT</a></li>
+                                        <li><a href="./blog.html">BLOG</a></li>
+                                        <li><a href="./contact.html">CONTACT</a></li>
+                                </ul>
+
+
+                        </div>
+
+                </nav>
+
+                <i class="fa-solid fa-bars" id="SHOWICON" onclick="showmenu()"></i>
+
+                <div class="text-content">
+                        <h1>Welcome To Best University</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum incidunt sed quidem iste
+                                eos blanditiis molestiae voluptatibus reprehenderit</p>
+                        <button class="btn" href="#">Visit US</button>
+
+                </div>
+
+        </section>
+
+        <section class="course">
+                <div class="title">
+                        <h2>Our Courses</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, vol</p>
+                </div>
+                <div class="row">
+
+                        <div class="column-course">
+                                <h3>Beginner</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores tempora iure
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, maiores.
+                                </p>
+                        </div>
+                        <div class="column-course">
+                                <h3>Intermediate</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores tempora iure
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, maiores.
+                                </p>
+                        </div>
+                        <div class="column-course">
+                                <h3>Advanced</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores tempora iure
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, maiores.
+                                </p>
+                        </div>
+                </div>
+        </section>
+        <section class="campus">
+                <div class="title">
+                        <h2>Our Connections</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, vol</p>
+                </div>
+                <div class="row">
+
+                        <div class="column-campus">
+                                <img src="./img/b1.jpg" alt="">
+                                <div class="layer">
+                                        <h3>Mumbai</h3>
+                                </div>
+                                
+                        </div>
+                        <div class="column-campus">
+                                <img src="./img/b2.jpg" alt="">
+                                <div class="layer">
+                                        <h3>Nagpur</h3>
+                                </div>
+                                
+                        </div>
+                        <div class="column-campus">
+                                <img src="./img/college3.jpg" alt="">
+                                <div class="layer">
+                                        <h3>Pune</h3>
+                                </div>
+                                
+                        </div>
+                </div>
+
+        </section>
+        <section class="review">
+                <div class="title">
+                        <h2>Enroll for various courses from all over the world </h2>
+                        
+                        <button class="btn">Contact Now</button>
+                </div>
+
+               
+                
+
+        </section>
+        <section class="footer">
+                <div class="title">
+                        <h2>About Us</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, vol Lorem ipsum dolor <br> amet consectetur adipisicing elit. Distinctio, aliquam!</p>
+
+                        <div class="social">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                
+                        </div>
+                        <div class="copy">
+                        Copyright &copy; All rights reserved.
+                        </div>
+
+                </div>
+
+        </section>
+
+        <script>
+                var NAVIGATION = document.getElementById("NAVIGATION")
+                var SHOWICON = document.getElementById("SHOWICON")
+                showmenu = () => {
+                        NAVIGATION.style.display = "block";
+                        SHOWICON.style.display = "none";
+                }
+                hidemenu = () => {
+                        NAVIGATION.style.display = "none";
+                        SHOWICON.style.display = "block";
+                }
+        </script>
+
+</body>
+
+</html>

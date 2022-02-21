@@ -1,0 +1,296 @@
+*{
+        margin:0px;
+        padding:0px;
+        font-family: 'Poppins', sans-serif;
+       
+}
+.header {
+        width:100%;
+        min-height: 100vh;
+        background-image:linear-gradient(rgba(44, 47, 73, 0.7),rgba(44, 47, 73, 0.7)),url("./img/student.png") ;
+        background-position:center;
+        background-size: cover;
+}
+.navigation{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        
+}
+nav ul {
+        display: flex; 
+        position: relative;
+        right: 19px;
+
+}
+nav ul li a{
+        color: white;
+        text-decoration: none;
+
+}
+nav ul li {
+         list-style: none;
+         color: white;
+         margin:25px 15px;
+         transition: 0.5s;
+}
+
+nav ul li:hover{
+
+       transform: translateY(6px);
+        cursor: pointer;
+        color: rgb(236, 99, 99);
+        
+}
+nav ul li a:hover{
+
+        
+         color: rgb(236, 99, 99);
+         
+ }
+
+nav img{
+        margin:18px;
+        width: 64px;
+        height:62px;
+}
+.text-content{
+        text-align: center;
+        color: white;
+        padding:50px 200px;
+}
+.text-content p{
+        margin-top: 20px;
+}
+.text-content h1{
+        font-size: 35px;
+}
+.btn{
+        border-radius: 6px;
+        margin: 18px auto;
+        padding: 4px 39px;
+        background: transparent;
+        color: white;
+        transition: 0.5s;
+
+}
+.btn:hover{
+        background-color: rgb(236, 99, 99);
+        cursor: pointer;
+}
+
+.fa-circle-xmark:before, .fa-times-circle:before, .fa-xmark-circle:before {
+        content: "\f057";
+        display: none;
+    }
+    
+.fa-bars:before, .fa-navicon:before {
+        content: "\f0c9";
+        display: none;
+    }
+
+@media(max-width:471px)
+{
+        .navlinks ul{
+                position: relative;
+                left:0px;
+                display: block;
+                text-align: center;
+                
+
+        }
+        .navigation{
+                display: none;
+                position: relative;
+                background-color: rgb(236, 99, 99);
+                height: 100%;       
+        }
+        nav img{
+                display:block;
+                margin: auto;
+                width: 64px;
+                height:62px;            
+        }
+        .fa-circle-xmark:before, .fa-times-circle:before, .fa-xmark-circle:before {
+                content: "\f057";
+                 display: block;
+                 position: absolute;
+                 right: 23px;
+                 font-size: 24px;
+                 color: white;
+            }
+            
+        .fa-bars:before, .fa-navicon:before {
+                display: block;
+                content: "\f0c9";
+                color: white;
+                position: absolute;
+                right:30px;
+                top:30px;
+                font-size: 20px;
+                
+            }       
+
+}
+@media(max-width:700px)
+{
+        .text-content p{
+                margin-top: 15px;
+        }
+        .text-content h1{
+                font-size: 25px;}
+        .text-content {
+                padding-right: 100px;
+                padding-left: 100px;
+         }
+         .row{
+                 display: flex;
+                 flex-direction: column;
+                 
+         }
+         .column-course{
+                 margin-left:50px;
+                 margin-right:50px;
+        }
+        .column-review{
+                flex-direction: column;
+        }
+        .column-review img{
+                left: 40%;
+    position: relative;
+    margin: 5px;
+        }
+        
+}
+
+/* ------Course--------- */
+.title{
+        text-align: center;
+    margin-top: 32px;
+}
+.row
+{
+        display: flex;
+        text-align: center;
+        margin: 20px 20px;   
+}
+.column-course{
+        margin: 22px 17px;
+        background-color: rgb(236, 210, 204);
+        padding: 16px;
+        border-radius: 8px;
+        
+}
+.column-course:hover{
+        box-shadow: rgb(160, 149, 149) 3px 3px 15px;
+        cursor: pointer;
+}
+.column-course h3{
+        margin-bottom: 15px;
+        
+}
+
+/* -------------------Campus----------- */
+.column-campus{
+        margin: 22px 17px;
+        position: relative;
+}
+.campus img{
+        width:100%;
+        margin-top: 20px 50px;
+        border-radius: 10px;
+        transition: 0.5s;        
+}
+.layer{
+       
+       border-radius: 10px;
+       height: 100%;
+       width: 100%;
+       position: absolute;
+       top: 0;
+       left: 0;
+       opacity: 0.8; 
+       transition: 0.5s;    
+}
+.layer h3{
+        position: absolute;
+        top:50%;
+        left:40%;
+        
+}
+
+
+.layer:hover{
+        background-color: rgb(235, 129, 129);
+        border-radius: 10px;
+       height: 100%;
+       width: 100%;
+       position: absolute;
+       top: 0;
+       left: 0;
+       opacity: 0.5; 
+
+}
+/* ------------------Reviews--------------- */
+.column-review{
+        position: relative;
+        width: 100%;
+        height:100%;
+        display: flex;
+        background-color: rgb(236, 210, 204);
+    border-radius: 5px;
+    margin-left: 43px;
+    margin-right: 43px;
+    margin-top: 10px;
+}
+.column-review img{
+        margin-top: 14px;
+        position: relative;
+        left: 31px;
+        height: 73px;
+        width: 83px;
+        border-radius: 31px;
+    
+}
+.column-review div{
+        margin: 10px 63px;
+    padding: 3px;
+    text-align: center;
+    
+
+}
+.review {
+        margin:100px auto;
+        width: 70%;
+        
+        background:linear-gradient(rgba(44, 47, 73, 0.7),rgba(44, 47, 73, 0.7)),url(./img/team.jpg) ;
+        background-position: center;
+        background-size: cover;
+        padding: 100px 0;
+        color: white;
+        text-align: center;
+        border-radius: 25px;
+        
+        
+       
+        
+        
+
+}
+.footer .title p{
+        color: gray;
+        margin-top: 25px;
+        font-size: 10px;
+        padding:30px;
+}
+.social{
+        margin:10px ;
+        
+
+}
+.copy{
+        color: gray;
+        margin-top: 25px;
+        font-size: 10px;
+
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+        <link rel="stylesheet" href="./blogstyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/276f308f99.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+        <section class="header">
+
+                <nav class="navigation" id="NAVIGATION">
+                        <a href="home.html"><img src="./img/logo.png" alt=""></a>
+                        <div class="navlinks">
+                                <i class="fa-solid fa-circle-xmark" onclick="hidemenu()"></i>
+
+                                <ul>
+                                        <li><a href="./home.html">HOME</a></li>
+                                        <li><a href="./about.html">ABOUT</a></li>
+                                        <li><a href="./blog.html">BLOG</a></li>
+                                        <li><a href="./contact.html">CONTACT</a></li>
+                                </ul>
+
+
+                        </div>
+
+                </nav>
+
+                <i class="fa-solid fa-bars" id="SHOWICON" onclick="showmenu()"></i>
+
+                <div class="text-content">
+                        <h1>Our <br>Certifications</h1>
+                </div>
+        </section>
+
+        <section class="blog">
+                <div class="blog-left">
+                        <img src="../img/blog.jpg" alt="">
+
+
+
+
+                        <div class="blcontent">
+
+                                <h2>Online Programs</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas voluptatem
+                                        itaque vel fugiat sit blanditiis id nulla tempora cupiditate! Quibusdam ipsum
+                                        cum error tenetur, obcaecati officiis nisi labore dolorum esse mollitia! Ipsa
+                                        quis dicta doloribus unde quos, voluptas voluptate, <br> <br>molestias
+                                        perferendis fugiat odio! Quisquam reiciendis consequuntur voluptatibus
+                                        temporibus molestias animi assumenda. Corrupti sed dolorem fugiat cum harum quis
+                                        a optio. Fugit, dicta quis.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laboriosam ab
+                                        laudantium dolor rem nisi odit eos omnis odio quaerat provident dolorum
+                                        perferendis, <br><br>quidem repellat? Quibusdam voluptatum laudantium
+                                        necessitatibus cupiditate corporis quidem consequuntur fugit soluta!</p>
+                        </div>
+
+                </div>
+                <div class="blog-right">
+
+                        <h3>Post Categories</h3>
+
+                        <div>
+                                <span>Computer Science</span>
+                                <span>25</span>
+                        </div>
+                        <div>
+                                <span>Information Tech</span>
+                                <span>28</span>
+                        </div>
+                        <div>
+                                <span>Electronics</span>
+                                <span>25</span>
+                        </div>
+                        <div>
+                                <span>Mechanical</span>
+                                <span>31</span>
+                        </div>
+                        <div>
+                                <span>Civil</span>
+                                <span>18</span>
+                        </div>
+
+                </div>
+        </section>
+        <section class="comment">
+                <h1>Leave a comment</h1>
+                <form action="">
+                        <div>
+                                <input type="text" name="name" id="" placeholder="Enter your name">
+                        </div>
+                        <div>
+                                <input type="text" name="email" id="" placeholder="Enter your email">
+                        </div>
+                        <div>
+                                <textarea name="msg" id=""  rows="4" placeholder="Enter your comment"></textarea>
+                        </div>
+                        
+                </form>
+                <button class="btn-post" href="#">POST COMMENT</button>
+        </section>
+        <section class="footer">
+                <div class="title">
+                        <h2>About Us</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, vol Lorem ipsum dolor
+                                <br> amet consectetur adipisicing elit. Distinctio, aliquam!</p>
+
+                        <div class="social">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-linkedin-in"></i>
+
+                        </div>
+                        <div class="copy">
+                                Copyright &copy; All rights reserved.
+                        </div>
+
+                </div>
+
+        </section>
+
+        <script>
+                var NAVIGATION = document.getElementById("NAVIGATION")
+                var SHOWICON = document.getElementById("SHOWICON")
+                showmenu = () => {
+                        NAVIGATION.style.display = "block";
+                        SHOWICON.style.display = "none";
+                }
+                hidemenu = () => {
+                        NAVIGATION.style.display = "none";
+                        SHOWICON.style.display = "block";
+                }
+        </script>
+
+</body>
+
+</html>
